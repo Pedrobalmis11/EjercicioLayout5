@@ -33,7 +33,6 @@ namespace EjercicioLayout5
 
             OperacionTextBlock.Text += boton.Content.ToString();
 
-
         }
     }
 }

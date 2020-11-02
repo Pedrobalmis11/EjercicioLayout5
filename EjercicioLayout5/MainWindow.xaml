@@ -11,6 +11,30 @@
         MinHeight="350"
         MinWidth="250">
 
+    <!--Etilos-->
+    <Window.Resources>
+
+        <!--Etilo Button-->
+        <Style TargetType="Button">
+
+            <Setter Property="Margin"
+                    Value="5" />
+
+            <Setter Property="FontSize"
+                    Value="25" />
+
+            <Setter Property="BorderThickness"
+                    Value="3" />
+
+            <EventSetter Event="Click"
+                         Handler="NumeroButton_Click" />
+
+        </Style>
+
+
+    </Window.Resources>
+
+
     <Viewbox Stretch="Fill">
         <Grid Height="350"
               Width="250">
@@ -20,7 +44,7 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
-                <RowDefinition MaxHeight="45"></RowDefinition>
+                <RowDefinition Height="45"></RowDefinition>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -43,79 +67,47 @@
                     </TextBlock>
                 </Viewbox>
             </Border>
-
-
+         
             <Button x:Name="UnoButton"
                     Grid.Row="1"
-                    Grid.Column="0"
-                    Margin="5"
-                    FontSize="25"
-                    Click="NumeroButton_Click">1</Button>
+                    Grid.Column="0">1</Button>
 
             <Button x:Name="DosButton"
                     Grid.Row="1"
-                    Grid.Column="1"
-                    Margin="5"
-                    FontSize="25"
-                    Click="NumeroButton_Click">2</Button>
+                    Grid.Column="1">2</Button>
 
             <Button x:Name="TresButton"
                     Grid.Row="1"
-                    Grid.Column="3"
-                    Margin="4.662,5,5,5"
-                    FontSize="25"
-                    Click="NumeroButton_Click">3</Button>
+                    Grid.Column="3">3</Button>
 
             <Button x:Name="CuatroButton"
                     Grid.Row="2"
-                    Grid.Column="0"
-                    Margin="5"
-                    FontSize="25"
-                    Click="NumeroButton_Click">4</Button>
+                    Grid.Column="0">4</Button>
 
             <Button x:Name="CincoButton"
                     Grid.Row="2"
-                    Grid.Column="1"
-                    Margin="5"
-                    FontSize="25"
-                    Click="NumeroButton_Click">5</Button>
+                    Grid.Column="1">5</Button>
 
             <Button x:Name="SeisButton"
                     Grid.Row="2"
-                    Grid.Column="3"
-                    Margin="4.662,5,5,5"
-                    FontSize="25"
-                    Click="NumeroButton_Click">6</Button>
+                    Grid.Column="3">6</Button>
 
             <Button x:Name="SieteButton"
                     Grid.Row="3"
-                    Grid.Column="0"
-                    Margin="5"
-                    FontSize="25"
-                    Click="NumeroButton_Click">7</Button>
+                    Grid.Column="0">7</Button>
 
             <Button x:Name="OchoButton"
                     Grid.Row="3"
-                    Grid.Column="1"
-                    Margin="5"
-                    FontSize="25"
-                    Click="NumeroButton_Click">8</Button>
+                    Grid.Column="1">8</Button>
 
             <Button x:Name="NueveButton"
                     Grid.Row="3"
-                    Grid.Column="3"
-                    Margin="4.662,5,5,5"
-                    FontSize="25"
-                    Click="NumeroButton_Click">9</Button>
+                    Grid.Column="3">9</Button>
 
             <Button x:Name="CeroButton"
                     Grid.Row="4"
                     Grid.Column="0"
-                    Grid.ColumnSpan="4"
-                    FontSize="25"
-                    Margin="5"
-                    Click="NumeroButton_Click">0</Button>
-
+                    Grid.ColumnSpan="4">0</Button>
 
         </Grid>
 
