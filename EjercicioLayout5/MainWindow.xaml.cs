@@ -22,7 +22,25 @@ namespace EjercicioLayout5
     {
         public MainWindow()
         {
+            int cont = 1;
             InitializeComponent();
+            for (int x = 2; x < 5; x++) 
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    Button b = new Button();
+                    TextBlock text = new TextBlock();
+                    text.Text = cont.ToString();
+                    b.Content = cont;
+                    b.Tag = cont.ToString();
+                    b.Style = (Style)this.Resources["estiloNum"];
+                    b.Click += NumeroButton_Click;
+                    Grid.SetColumn(b, i);
+                    Grid.SetRow(b, x);
+                    grid.Children.Add(b);
+                    cont++;
+                }
+            }
         }
 
         private void NumeroButton_Click(object sender, RoutedEventArgs e)
@@ -30,7 +48,7 @@ namespace EjercicioLayout5
 
             Button boton = (Button)sender;
 
-
+            
             OperacionTextBlock.Text += boton.Content.ToString();
 
         }

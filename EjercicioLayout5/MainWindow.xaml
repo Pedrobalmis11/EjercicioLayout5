@@ -15,7 +15,8 @@
     <Window.Resources>
 
         <!--Etilo Button-->
-        <Style TargetType="Button">
+        <Style TargetType="Button"
+               x:Key="estiloNum">
 
             <Setter Property="Margin"
                     Value="5" />
@@ -25,26 +26,25 @@
 
             <Setter Property="BorderThickness"
                     Value="3" />
-
-            <EventSetter Event="Click"
-                         Handler="NumeroButton_Click" />
-
         </Style>
 
 
     </Window.Resources>
 
-
     <Viewbox Stretch="Fill">
         <Grid Height="350"
-              Width="250">
+              Width="250"
+              x:Name="grid">
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <!--Height="100"-->
+
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
-                <RowDefinition Height="45"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <!--Height="45"-->
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -67,7 +67,8 @@
                     </TextBlock>
                 </Viewbox>
             </Border>
-         
+
+            <!--
             <Button x:Name="UnoButton"
                     Grid.Row="1"
                     Grid.Column="0">1</Button>
@@ -108,6 +109,7 @@
                     Grid.Row="4"
                     Grid.Column="0"
                     Grid.ColumnSpan="4">0</Button>
+            -->
 
         </Grid>
 
